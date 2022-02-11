@@ -64,7 +64,7 @@ class Board:
             for conX in range(-1, 2):
                 for conY in range(-1, 2):
                     d1 = Dot(d.x+conX, d.y+conY)
-                    if d1 not in self.busy:
+                    if d1 not in self.busy and d1 not in some_ship.dots:
                         if verb:
                             self.field[d1.x][d1.y] = "."
                         self.busy.append(d1)
