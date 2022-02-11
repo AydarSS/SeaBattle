@@ -174,6 +174,7 @@ class Game:
                     break
                 except MyException:
                     pass
+        board.busy = []
         return board
 
     def greet(self):
